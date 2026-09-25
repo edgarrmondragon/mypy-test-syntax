@@ -1,0 +1,28 @@
+{
+  "name": "mypy-test-syntax",
+  "publisher": "local",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "mypy-test",
+        "aliases": [
+          "mypy test data"
+        ],
+        "filenamePatterns": [
+          "**/test-data/unit/*.test"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mypy-test",
+        "scopeName": "source.mypy-test",
+        "path": "./mypy-test.tmLanguage.json"
+      }
+    ]
+  }
+}

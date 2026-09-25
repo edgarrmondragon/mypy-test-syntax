@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "mypy test data",
+  "scopeName": "source.mypy-test",
+  "patterns": [
+    {
+      "include": "#comment"
+    },
+    {
+      "include": "#section"
+    },
+    {
+      "include": "source.python"
+    }
+  ],
+  "repository": {
+    "comment": {
+      "match": "^--.*$",
+      "name": "comment.line.double-dash.mypy-test"
+    },
+    "section": {
+      "match": "^(\\[)([A-Za-z0-9_]+)([^\\]]*)(\\])[ \\t]*$",
+      "captures": {
+        "1": {
+          "name": "punctuation.definition.tag.mypy-test"
+        },
+        "2": {
+          "name": "keyword.control.section.mypy-test"
+        },
+        "3": {
+          "name": "entity.name.function.mypy-test"
+        },
+        "4": {
+          "name": "punctuation.definition.tag.mypy-test"
+        }
+      }
+    }
+  }
+}
