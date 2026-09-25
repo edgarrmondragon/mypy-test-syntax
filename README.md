@@ -15,7 +15,7 @@ ln -s "$(pwd)/mypy-test-syntax" ~/.vscode/extensions/local.mypy-test-syntax-1.0.
 
 Then fully quit and reopen VS Code. Future edits to this repo take effect after a restart, with no reinstall step.
 
-Any file matching `**/test-data/unit/*.test` is associated with this language automatically — no per-repo setup needed.
+Any file matching `**/test-data/unit/*.test` is associated with this language automatically.
 
 ### Customize colors
 
